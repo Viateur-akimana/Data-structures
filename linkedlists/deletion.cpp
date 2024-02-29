@@ -18,44 +18,44 @@ void displayList(Node* head){
 }    
 ///Deleting an element at the beginning
 
-// void deleteAtBeginning(Node*& head){
+void deleteAtBeginning(Node*& head){
    
-//   if (head == nullptr)
-//   {
-//     cout <<"No node is present";
-//     return;
-//   }
-//   Node*temp=head;
-//   head=head->next;
-//   delete temp;
+  if (head == nullptr)
+  {
+    cout <<"No node is present";
+    return;
+  }
+  Node*temp=head;
+  head=head->next;
+  delete temp;
   
    
-// }
+}
 
 
-     //delting an element at the end
-// void deleteAtEnd(Node*& head){
-//   if(head == nullptr){
-//     cout <<"Linkedlist is empty:";
-//     return;
-//   }
+     delting an element at the end
+void deleteAtEnd(Node*& head){
+  if(head == nullptr){
+    cout <<"Linkedlist is empty:";
+    return;
+  }
 
-//   if (head->next == nullptr)
-//   {
-//      delete head;
-//      head->next=nullptr;
-//      return;
-//   }
-//   Node * temp=head;
-//   while (temp->next->next != nullptr)
-//   {
-//   temp=temp->next;
-//   }
-//   delete temp->next;
-//   temp->next=nullptr;
+  if (head->next == nullptr)
+  {
+     delete head;
+     head->next=nullptr;
+     return;
+  }
+  Node * temp=head;
+  while (temp->next->next != nullptr)
+  {
+  temp=temp->next;
+  }
+  delete temp->next;
+  temp->next=nullptr;
   
   
-// }
+}
 
       //deleting an element at the position
 
